@@ -12,22 +12,11 @@ var board = [
 	
 ]
 
-var guiBoard = []
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	#not working yet, need to check how to bind it
-	guiBoard = [
-	[[$Background/a8/Label],[$Background/a7/Label],[$Background/a6/Label],[$Background/a5/Label],[$Background/a4/Label],[$Background/a3/Label],[$Background/a2/Label],[$Background/a1/Label]],
-	[[$Background/b8/Label],[$Background/b7/Label],[$Background/b6/Label],[$Background/b5/Label],[$Background/b4/Label],[$Background/b3/Label],[$Background/b2/Label],[$Background/b1/Label]],
-	[[$Background/c8/Label],[$Background/c7/Label],[$Background/c6/Label],[$Background/c5/Label],[$Background/c4/Label],[$Background/c3/Label],[$Background/c2/Label],[$Background/c1/Label]],
-	[[$Background/d8/Label],[$Background/d7/Label],[$Background/d6/Label],[$Background/d5/Label],[$Background/d4/Label],[$Background/d3/Label],[$Background/d2/Label],[$Background/d1/Label]],
-	[[$Background/e8/Label],[$Background/e7/Label],[$Background/e6/Label],[$Background/e5/Label],[$Background/e4/Label],[$Background/e3/Label],[$Background/e2/Label],[$Background/e1/Label]],
-	[[$Background/f8/Label],[$Background/f7/Label],[$Background/f6/Label],[$Background/f5/Label],[$Background/f4/Label],[$Background/f3/Label],[$Background/f2/Label],[$Background/f1/Label]],
-	[[$Background/g8/Label],[$Background/g7/Label],[$Background/g6/Label],[$Background/g5/Label],[$Background/g4/Label],[$Background/g3/Label],[$Background/g2/Label],[$Background/g1/Label]],
-	[[$Background/h8/Label],[$Background/h7/Label],[$Background/h6/Label],[$Background/h5/Label],[$Background/h4/Label],[$Background/h3/Label],[$Background/h2/Label],[$Background/h1/Label]]	
-	]
-	guiBoard[0][0] = "works"
-	
+	val($FENLineEdit.text)
+	paintBoard()
+	pass
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
@@ -70,7 +59,7 @@ func val(fen):
 					
 	for i in range(len(board)):
 		print_debug(board[i])
-	setBoard()
+	paintBoard()
 
 func isNumber(i):
 	var isnumber = false
@@ -92,10 +81,78 @@ func isMove(n):
 			ismove = true
 	return ismove
 
-func setBoard():
-	for i in range(8):
-		for j in range(8):
-			guiBoard[i][j].text = board[i][j][1]
+func paintBoard():
+	$Background/a8/Label.text = board[0][0][1]
+	$Background/a7/Label.text = board[0][1][1]
+	$Background/a6/Label.text = board[0][2][1]
+	$Background/a5/Label.text = board[0][3][1]
+	$Background/a4/Label.text = board[0][4][1]
+	$Background/a3/Label.text = board[0][5][1]
+	$Background/a2/Label.text = board[0][6][1]
+	$Background/a1/Label.text = board[0][7][1]
+	
+	$Background/b8/Label.text = board[1][0][1]
+	$Background/b7/Label.text = board[1][1][1]
+	$Background/b6/Label.text = board[1][2][1]
+	$Background/b5/Label.text = board[1][3][1]
+	$Background/b4/Label.text = board[1][4][1]
+	$Background/b3/Label.text = board[1][5][1]
+	$Background/b2/Label.text = board[1][6][1]
+	$Background/b1/Label.text = board[1][7][1]
+	
+	$Background/c8/Label.text = board[2][0][1]
+	$Background/c7/Label.text = board[2][1][1]
+	$Background/c6/Label.text = board[2][2][1]
+	$Background/c5/Label.text = board[2][3][1]
+	$Background/c4/Label.text = board[2][4][1]
+	$Background/c3/Label.text = board[2][5][1]
+	$Background/c2/Label.text = board[2][6][1]
+	$Background/c1/Label.text = board[2][7][1]
+	
+	$Background/d8/Label.text = board[3][0][1]
+	$Background/d7/Label.text = board[3][1][1]
+	$Background/d6/Label.text = board[3][2][1]
+	$Background/d5/Label.text = board[3][3][1]
+	$Background/d4/Label.text = board[3][4][1]
+	$Background/d3/Label.text = board[3][5][1]
+	$Background/d2/Label.text = board[3][6][1]
+	$Background/d1/Label.text = board[3][7][1]
+	
+	$Background/e8/Label.text = board[4][0][1]
+	$Background/e7/Label.text = board[4][1][1]
+	$Background/e6/Label.text = board[4][2][1]
+	$Background/e5/Label.text = board[4][3][1]
+	$Background/e4/Label.text = board[4][4][1]
+	$Background/e3/Label.text = board[4][5][1]
+	$Background/e2/Label.text = board[4][6][1]
+	$Background/e1/Label.text = board[4][7][1]
+	
+	$Background/f8/Label.text = board[5][0][1]
+	$Background/f7/Label.text = board[5][1][1]
+	$Background/f6/Label.text = board[5][2][1]
+	$Background/f5/Label.text = board[5][3][1]
+	$Background/f4/Label.text = board[5][4][1]
+	$Background/f3/Label.text = board[5][5][1]
+	$Background/f2/Label.text = board[5][6][1]
+	$Background/f1/Label.text = board[5][7][1]
+	
+	$Background/g8/Label.text = board[6][0][1]
+	$Background/g7/Label.text = board[6][1][1]
+	$Background/g6/Label.text = board[6][2][1]
+	$Background/g5/Label.text = board[6][3][1]
+	$Background/g4/Label.text = board[6][4][1]
+	$Background/g3/Label.text = board[6][5][1]
+	$Background/g2/Label.text = board[6][6][1]
+	$Background/g1/Label.text = board[6][7][1]
+	
+	$Background/h8/Label.text = board[7][0][1]
+	$Background/h7/Label.text = board[7][1][1]
+	$Background/h6/Label.text = board[7][2][1]
+	$Background/h5/Label.text = board[7][3][1]
+	$Background/h4/Label.text = board[7][4][1]
+	$Background/h3/Label.text = board[7][5][1]
+	$Background/h2/Label.text = board[7][6][1]
+	$Background/h1/Label.text = board[7][7][1]
 	
 func fill():
 	pass
