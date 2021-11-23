@@ -109,6 +109,12 @@ func val(fen):
 	else:
 		$ValidateCastlingLabel.text = "Castling FEN part is incorrect"
 
+	# "En Passant"
+	if isEnPassant(fenArr[10],onMove):
+		$ValidateEnPassantLabel.text = "En Passant is marked correctly"
+	else:
+		$ValidateEnPassantLabel.text = "En Passant is marked incorrectly"
+	
 	
 func messCleaner():
 	board = cleanBoard
@@ -164,7 +170,78 @@ func castling(n):
 			if board[0][4][1]!="k" || board[0][0][1]!="r":
 				return false
 	return true
-			
+
+func isEnPassant(n, m):
+	if n == "-":
+		return true
+	elif len(n)!=2:
+		return false
+	
+	if "abcdefgh".count(n[0])==0:
+		return false
+	
+	if m == "w":
+		if n[1]!="6":
+			return false
+		else:
+			match n[0]:
+				"a":
+					if board[3][0][1] == "p":
+						return true
+				"b":
+					if board[3][1][1] == "p":
+						return true
+				"c":
+					if board[3][2][1] == "p":
+						return true
+				"d":
+					if board[3][3][1] == "p":
+						return true
+				"e":
+					if board[3][4][1] == "p":
+						return true
+				"f":
+					if board[3][5][1] == "p":
+						return true
+				"g":
+					if board[3][6][1] == "p":
+						return true
+				"h":
+					if board[3][7][1] == "p":
+						return true
+	elif m == "b":
+		if n[1]!="3":
+			return false
+		else:
+			match n[0]:
+				"a":
+					if board[4][0][1] == "P":
+						return true
+				"b":
+					if board[4][1][1] == "P":
+						return true
+				"c":
+					if board[4][2][1] == "P":
+						return true
+				"d":
+					if board[4][3][1] == "P":
+						return true
+				"e":
+					if board[4][4][1] == "P":
+						return true
+				"f":
+					if board[4][5][1] == "P":
+						return true
+				"g":
+					if board[4][6][1] == "P":
+						return true
+				"h":
+					if board[4][7][1] == "P":
+						return true
+	return false
+	
+	
+	
 func paintBoard():
 	$Background/a8/Label.text = board[0][0][1]
 	$Background/b8/Label.text = board[0][1][1]

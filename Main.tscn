@@ -1681,4 +1681,13 @@ margin_bottom = 254.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="ValidateEnPassantLabel" type="Label" parent="."]
+margin_left = 568.0
+margin_top = 264.0
+margin_right = 608.0
+margin_bottom = 278.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="text_changed" from="FENLineEdit" to="." method="_on_FENLineEdit_text_changed"]
