@@ -91,6 +91,25 @@ func val(fen):
 		print_debug(board[i])
 	paintBoard()
 
+	## SECOND PART OF FEN
+	# "Who's on the move?"
+	var onMove
+	if isMove(fenArr[8]):
+		onMove = fenArr[8]
+		if onMove == "w":
+			$ValidateOnMoveLabel.text = "Whites are on the move"
+		elif onMove == "b":
+			$ValidateOnMoveLabel.text = "Blacks are on the move"
+	else:
+		$ValidateOnMoveLabel.text = "Not specified who's on the move"
+	
+	# "Castling"
+	if castling(fenArr[9]):
+		$ValidateCastlingLabel.text = "Castling is correctly marked"
+	else:
+		$ValidateCastlingLabel.text = "Castling FEN part is incorrect"
+
+	
 func messCleaner():
 	board = cleanBoard
 	paintBoard()
@@ -121,77 +140,102 @@ func isMove(n):
 			ismove = true
 	return ismove
 
+func castling(n):
+	# if it's "-", it means there are none and it is very likely
+	if n == "-":
+		return true
+	
+	# checking if the castling is not dublicated
+	for i in n:
+		if n.count(i)>1:
+			return false
+	
+	for i in n:
+		if i == "K":
+			if board[7][4][1]!="K" || board[7][7][1]!="R":
+				return false
+		elif i == "Q":
+			if board[7][4][1]!="K" || board[7][0][1]!="R":
+				return false
+		elif i == "k":
+			if board[0][4][1]!="k" || board[0][7][1]!="r":
+				return false
+		elif i == "q":
+			if board[0][4][1]!="k" || board[0][0][1]!="r":
+				return false
+	return true
+			
 func paintBoard():
 	$Background/a8/Label.text = board[0][0][1]
-	$Background/a7/Label.text = board[0][1][1]
-	$Background/a6/Label.text = board[0][2][1]
-	$Background/a5/Label.text = board[0][3][1]
-	$Background/a4/Label.text = board[0][4][1]
-	$Background/a3/Label.text = board[0][5][1]
-	$Background/a2/Label.text = board[0][6][1]
-	$Background/a1/Label.text = board[0][7][1]
+	$Background/b8/Label.text = board[0][1][1]
+	$Background/c8/Label.text = board[0][2][1]
+	$Background/d8/Label.text = board[0][3][1]
+	$Background/e8/Label.text = board[0][4][1]
+	$Background/f8/Label.text = board[0][5][1]
+	$Background/g8/Label.text = board[0][6][1]
+	$Background/h8/Label.text = board[0][7][1]
 	
-	$Background/b8/Label.text = board[1][0][1]
+	$Background/a7/Label.text = board[1][0][1]
 	$Background/b7/Label.text = board[1][1][1]
-	$Background/b6/Label.text = board[1][2][1]
-	$Background/b5/Label.text = board[1][3][1]
-	$Background/b4/Label.text = board[1][4][1]
-	$Background/b3/Label.text = board[1][5][1]
-	$Background/b2/Label.text = board[1][6][1]
-	$Background/b1/Label.text = board[1][7][1]
+	$Background/c7/Label.text = board[1][2][1]
+	$Background/d7/Label.text = board[1][3][1]
+	$Background/e7/Label.text = board[1][4][1]
+	$Background/f7/Label.text = board[1][5][1]
+	$Background/g7/Label.text = board[1][6][1]
+	$Background/h7/Label.text = board[1][7][1]
 	
-	$Background/c8/Label.text = board[2][0][1]
-	$Background/c7/Label.text = board[2][1][1]
+	$Background/a6/Label.text = board[2][0][1]
+	$Background/b6/Label.text = board[2][1][1]
 	$Background/c6/Label.text = board[2][2][1]
-	$Background/c5/Label.text = board[2][3][1]
-	$Background/c4/Label.text = board[2][4][1]
-	$Background/c3/Label.text = board[2][5][1]
-	$Background/c2/Label.text = board[2][6][1]
-	$Background/c1/Label.text = board[2][7][1]
+	$Background/d6/Label.text = board[2][3][1]
+	$Background/e6/Label.text = board[2][4][1]
+	$Background/f6/Label.text = board[2][5][1]
+	$Background/g6/Label.text = board[2][6][1]
+	$Background/h6/Label.text = board[2][7][1]
 	
-	$Background/d8/Label.text = board[3][0][1]
-	$Background/d7/Label.text = board[3][1][1]
-	$Background/d6/Label.text = board[3][2][1]
+	$Background/a5/Label.text = board[3][0][1]
+	$Background/b5/Label.text = board[3][1][1]
+	$Background/c5/Label.text = board[3][2][1]
 	$Background/d5/Label.text = board[3][3][1]
-	$Background/d4/Label.text = board[3][4][1]
-	$Background/d3/Label.text = board[3][5][1]
-	$Background/d2/Label.text = board[3][6][1]
-	$Background/d1/Label.text = board[3][7][1]
+	$Background/e5/Label.text = board[3][4][1]
+	$Background/f5/Label.text = board[3][5][1]
+	$Background/g5/Label.text = board[3][6][1]
+	$Background/h5/Label.text = board[3][7][1]
 	
-	$Background/e8/Label.text = board[4][0][1]
-	$Background/e7/Label.text = board[4][1][1]
-	$Background/e6/Label.text = board[4][2][1]
-	$Background/e5/Label.text = board[4][3][1]
+	$Background/a4/Label.text = board[4][0][1]
+	$Background/b4/Label.text = board[4][1][1]
+	$Background/c4/Label.text = board[4][2][1]
+	$Background/d4/Label.text = board[4][3][1]
 	$Background/e4/Label.text = board[4][4][1]
-	$Background/e3/Label.text = board[4][5][1]
-	$Background/e2/Label.text = board[4][6][1]
-	$Background/e1/Label.text = board[4][7][1]
+	$Background/f4/Label.text = board[4][5][1]
+	$Background/g4/Label.text = board[4][6][1]
+	$Background/h4/Label.text = board[4][7][1]
 	
-	$Background/f8/Label.text = board[5][0][1]
-	$Background/f7/Label.text = board[5][1][1]
-	$Background/f6/Label.text = board[5][2][1]
-	$Background/f5/Label.text = board[5][3][1]
-	$Background/f4/Label.text = board[5][4][1]
+	$Background/a3/Label.text = board[5][0][1]
+	$Background/b3/Label.text = board[5][1][1]
+	$Background/c3/Label.text = board[5][2][1]
+	$Background/d3/Label.text = board[5][3][1]
+	$Background/e3/Label.text = board[5][4][1]
 	$Background/f3/Label.text = board[5][5][1]
-	$Background/f2/Label.text = board[5][6][1]
-	$Background/f1/Label.text = board[5][7][1]
+	$Background/g3/Label.text = board[5][6][1]
+	$Background/h3/Label.text = board[5][7][1]
 	
-	$Background/g8/Label.text = board[6][0][1]
-	$Background/g7/Label.text = board[6][1][1]
-	$Background/g6/Label.text = board[6][2][1]
-	$Background/g5/Label.text = board[6][3][1]
-	$Background/g4/Label.text = board[6][4][1]
-	$Background/g3/Label.text = board[6][5][1]
+	$Background/a2/Label.text = board[6][0][1]
+	$Background/b2/Label.text = board[6][1][1]
+	$Background/c2/Label.text = board[6][2][1]
+	$Background/d2/Label.text = board[6][3][1]
+	$Background/e2/Label.text = board[6][4][1]
+	$Background/f2/Label.text = board[6][5][1]
 	$Background/g2/Label.text = board[6][6][1]
-	$Background/g1/Label.text = board[6][7][1]
+	$Background/h2/Label.text = board[6][7][1]
 	
-	$Background/h8/Label.text = board[7][0][1]
-	$Background/h7/Label.text = board[7][1][1]
-	$Background/h6/Label.text = board[7][2][1]
-	$Background/h5/Label.text = board[7][3][1]
-	$Background/h4/Label.text = board[7][4][1]
-	$Background/h3/Label.text = board[7][5][1]
-	$Background/h2/Label.text = board[7][6][1]
+	$Background/a1/Label.text = board[7][0][1]
+	$Background/b1/Label.text = board[7][1][1]
+	$Background/c1/Label.text = board[7][2][1]
+	$Background/d1/Label.text = board[7][3][1]
+	$Background/e1/Label.text = board[7][4][1]
+	$Background/f1/Label.text = board[7][5][1]
+	$Background/g1/Label.text = board[7][6][1]
 	$Background/h1/Label.text = board[7][7][1]
 	
 func fill():
