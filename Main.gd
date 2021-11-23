@@ -11,7 +11,7 @@ var board = [
 	[["w",""],["b",""],["w",""],["b",""],["w",""],["b",""],["w",""],["b",""]],
 	
 ]
-
+var cleanBoard = board.duplicate(true)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	val($FENLineEdit.text)
@@ -27,7 +27,6 @@ func _on_FENLineEdit_text_changed(new_text):
 	pass # Replace with function body.
 
 func val(fen):
-	$ValidateLabel.text = str(fen.find('/'))
 	#dodać walidację liczenia backslashy i spacji z trymowaniem
 	var isValid = false
 	var fenArr = fen.split("/", true, 0)
@@ -37,6 +36,13 @@ func val(fen):
 	#print_debug(fenArr)
 	#print_debug(len(fenArr))
 	
+	## BUILDING THE BOARD
+	
+	# main logic behind building the board is
+	# to write figures as they are and
+	# understand numbers as an amount of empty spaces
+	var colNumber = true
+	var colNumberI
 	# if the length is right the notation has 
 	# the right amount of segments
 	if len(fenArr) == 13:
@@ -45,22 +51,50 @@ func val(fen):
 			var col = 0
 			for j in line:
 				for k in j:
-					print_debug("k: ",k)
-					print_debug("col: ",col)
+					if col==8:
+						$ValidateLabel.text = "Too much columns in row: "+str(i)
+						pass
+					#print_debug("k: ",k)
+					#print_debug("col: ",col)
 					if isNumber(k):
-						print_debug(k)
-						print_debug(typeof(k))
+						#print_debug(k)
+						#print_debug(typeof(k))
 						for g in range(int(k)):
 							board[i][col][1] = ""
 							col += 1
-					else:
+					elif isFigure(k):
 						board[i][col][1] = k
 						col += 1
-					
+					else:
+						# If one of the chars inputed in first 8 segments
+						# is not 1-8 nor "rnbqkpRNBQKP", then the syntax
+						# is invalid
+						$ValidateLabel.text = "Invalid character in row: "+str(i)
+						messCleaner()
+						pass
+						
+			if col!=8:
+				colNumber = false
+				colNumberI = i + 1
+	
+	if !colNumber:
+		$ValidateLabel.text = "Incorrect number of columns in row: " + str(colNumberI)
+		messCleaner()
+	elif len(fenArr) != 13 && colNumber:
+		$ValidateLabel.text = "A part of FEN notation is missing"
+		messCleaner()
+		pass
+	else:
+		$ValidateLabel.text = "Number of columns in each row is corrct"
+
 	for i in range(len(board)):
 		print_debug(board[i])
 	paintBoard()
 
+func messCleaner():
+	board = cleanBoard
+	paintBoard()
+	
 func isNumber(i):
 	var isnumber = false
 	for j in "12345678":
@@ -70,6 +104,12 @@ func isNumber(i):
 
 func isChess(n):
 	for j in "rnbqkpRNBQKP12345678":
+		if j == n:
+			return true
+	return false
+	
+func isFigure(n):
+	for j in "rnbqkpRNBQKP":
 		if j == n:
 			return true
 	return false
