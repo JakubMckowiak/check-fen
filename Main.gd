@@ -12,6 +12,8 @@ var board = [
 	
 ]
 var cleanBoard = board.duplicate(true)
+var Pawns = 0
+var pawns = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	val($FENLineEdit.text)
@@ -128,6 +130,7 @@ func val(fen):
 		$ValidateFMLabel.text = "Fullmove is marked incorrectly"
 		
 	$ValidateKingLabel.text = correctKing()
+	$ValidatePawnLabel.text = correctPawns()
 	
 func messCleaner():
 	board = cleanBoard
@@ -320,6 +323,111 @@ func kingNear(r,c):
 		if board[r+1][c+1][1] == "k" or board[r+1][c+1][1] == "K":
 			return true
 	return false
+
+func correctPawns():
+	pawns = 0
+	Pawns = 0
+	var figure = 0
+	var Figure = 0
+	#		  r,n,b,q
+	var ft = [0,0,0,0]
+	# if there is more than one bishop
+	# and the other ones are not in other floor color
+	# then return "Bishop wrongly placed"
+	var b = ""
+	var bwarning = true
+	#		  R,N,B,Q
+	var Ft = [0,0,0,0]
+	var B = ""
+	var Bwarning = true
+	# checking the amount of pawns and rows they are placed in
+	for i in range(len(board)):
+		if (pawns>8 || Pawns>8):
+			return "There are too many pawns!"
+		if (pawns+figure>15 || Pawns+Figure>15):
+			return "There are too many pawns!"
+		for j in range(len(board[i])):
+			if board[i][j][1] == "p":
+				if i == 0:
+					return "Black pawn in wrong position"
+				pawns += 1
+			elif board[i][j][1] == "P":
+				if i == 7:
+					return "White pawn in wrong position"
+				Pawns += 1
+			elif board[i][j][1] == "b":
+				ft[2] += 1
+				if b == "":
+					b = board[i][j][0]
+				elif (b != "" and bwarning == true):
+					if b != board[i][j][0]:
+						bwarning = false
+			elif board[i][j][1] == "B":
+				Ft[2] += 1
+				if B == "":
+					B = board[i][j][0]
+				elif (B != "" and Bwarning == true):
+					if B != board[i][j][0]:
+						Bwarning = false
+			elif board[i][j][1] == "r":
+				ft[0] += 1
+			elif board[i][j][1] == "R":
+				Ft[0] += 1
+			elif board[i][j][1] == "n":
+				ft[1] += 1
+			elif board[i][j][1] == "N":
+				Ft[1] += 1
+			elif board[i][j][1] == "q":
+				ft[3] += 1
+			elif board[i][j][1] == "Q":
+				Ft[3] += 1
+	# checking if bishops are well placed
+	if bwarning && ft[1]>1:
+		wrongBishop("Black bishops wrongly placed")
+	elif Bwarning && Ft[1]>1:
+		wrongBishop("White bishops wrongly placed")
+	else:
+		wrongBishop("Bishops are rightfully placed")
+	# checking if pawns to figures balanse is ok
+	var overload = 0
+	# Blacks
+	# Rooks
+	if ft[0]>2:
+		overload += ft[0]
+	# Knight
+	if ft[1]>2:
+		overload += ft[1]
+	# Bishops
+	if ft[2]>2:
+		overload += ft[2]
+	# Queen
+	if ft[3]>1:
+		overload += ft[3]
+	if overload > 0:
+		if pawns > (8 - overload):
+			return "Inbalansed figures to pawns ratio on black's side"
+	overload = 0
+	# Whites
+	# Rooks
+	if Ft[0]>2:
+		overload += ft[0]
+	# Knight
+	if Ft[1]>2:
+		overload += ft[1]
+	# Bishops
+	if Ft[2]>2:
+		overload += ft[2]
+	# Queen
+	if Ft[3]>1:
+		overload += ft[3]
+	if overload > 0:
+		if Pawns > (8 - overload):
+			return "Inbalansed figures to pawns ratio on white's side"
+
+	return "Pawns are correctly placed"
+
+func wrongBishop(s):
+	$ValidateBishopLabel.text = s
 	
 func paintBoard():
 	$Background/a8/Label.text = board[0][0][1]

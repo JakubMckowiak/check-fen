@@ -1831,4 +1831,22 @@ margin_bottom = 350.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="ValidatePawnLabel" type="Label" parent="."]
+margin_left = 568.0
+margin_top = 360.0
+margin_right = 608.0
+margin_bottom = 374.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ValidateBishopLabel" type="Label" parent="."]
+margin_left = 568.0
+margin_top = 384.0
+margin_right = 608.0
+margin_bottom = 398.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="text_changed" from="FENLineEdit" to="." method="_on_FENLineEdit_text_changed"]
