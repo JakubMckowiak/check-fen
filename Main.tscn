@@ -26,8 +26,10 @@ font_data = ExtResource( 2 )
 script = ExtResource( 1 )
 
 [node name="Background" type="ColorRect" parent="."]
-margin_right = 1024.0
-margin_bottom = 600.0
+margin_left = -0.598724
+margin_top = 1.19747
+margin_right = 1023.4
+margin_bottom = 601.197
 color = Color( 0.282353, 0.282353, 0.282353, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -97,7 +99,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="a1" type="ColorRect" parent="Background"]
+[node name="a8" type="ColorRect" parent="Background"]
 margin_left = 64.0
 margin_top = 64.0
 margin_right = 104.0
@@ -108,21 +110,23 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Background/a1"]
-margin_left = 7.02075
-margin_top = 3.52558
-margin_right = 47.0207
-margin_bottom = 43.5256
+[node name="Label" type="Label" parent="Background/a8"]
+margin_left = 2.0
+margin_top = 3.76051
+margin_right = 41.9999
+margin_bottom = 43.7605
 rect_rotation = 0.0851828
 custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="b1" type="ColorRect" parent="Background"]
+[node name="b8" type="ColorRect" parent="Background"]
 margin_left = 104.0
 margin_top = 64.0
 margin_right = 144.0
@@ -133,20 +137,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Background/b1"]
-margin_left = 5.02075
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
+[node name="Label" type="Label" parent="Background/b8"]
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="c1" type="ColorRect" parent="Background"]
+[node name="c8" type="ColorRect" parent="Background"]
 margin_left = 144.0
 margin_top = 64.0
 margin_right = 184.0
@@ -157,20 +162,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Background/c1"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
+[node name="Label" type="Label" parent="Background/c8"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="d1" type="ColorRect" parent="Background"]
+[node name="d8" type="ColorRect" parent="Background"]
 margin_left = 184.0
 margin_top = 64.0
 margin_right = 224.0
@@ -181,20 +188,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Background/d1"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
+[node name="Label" type="Label" parent="Background/d8"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="e1" type="ColorRect" parent="Background"]
+[node name="e8" type="ColorRect" parent="Background"]
 margin_left = 224.0
 margin_top = 64.0
 margin_right = 264.0
@@ -205,20 +214,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Background/e1"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
+[node name="Label" type="Label" parent="Background/e8"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="f1" type="ColorRect" parent="Background"]
+[node name="f8" type="ColorRect" parent="Background"]
 margin_left = 264.0
 margin_top = 64.0
 margin_right = 304.0
@@ -229,20 +240,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Background/f1"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
+[node name="Label" type="Label" parent="Background/f8"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="g1" type="ColorRect" parent="Background"]
+[node name="g8" type="ColorRect" parent="Background"]
 margin_left = 304.0
 margin_top = 64.0
 margin_right = 344.0
@@ -253,15 +266,17 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Background/g1"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
+[node name="Label" type="Label" parent="Background/g8"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -278,1148 +293,1232 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="Background/h8"]
-margin_left = 5.02075
-margin_top = 3.52558
-margin_right = 45.0208
-margin_bottom = 43.5256
+margin_top = 3.76051
+margin_right = 40.0001
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="h2" type="ColorRect" parent="Background"]
-margin_left = 344.0
-margin_top = 104.0
-margin_right = 384.0
-margin_bottom = 144.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/h2"]
-margin_left = 5.02075
-margin_top = 3.52558
-margin_right = 45.0208
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="g2" type="ColorRect" parent="Background"]
-margin_left = 304.0
-margin_top = 104.0
-margin_right = 344.0
-margin_bottom = 144.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/g2"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="f2" type="ColorRect" parent="Background"]
-margin_left = 264.0
-margin_top = 104.0
-margin_right = 304.0
-margin_bottom = 144.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/f2"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="e2" type="ColorRect" parent="Background"]
-margin_left = 224.0
-margin_top = 104.0
-margin_right = 264.0
-margin_bottom = 144.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/e2"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="d2" type="ColorRect" parent="Background"]
-margin_left = 184.0
-margin_top = 104.0
-margin_right = 224.0
-margin_bottom = 144.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/d2"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="c2" type="ColorRect" parent="Background"]
-margin_left = 144.0
-margin_top = 104.0
-margin_right = 184.0
-margin_bottom = 144.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/c2"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="b2" type="ColorRect" parent="Background"]
-margin_left = 104.0
-margin_top = 104.0
-margin_right = 144.0
-margin_bottom = 144.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/b2"]
-margin_left = 5.02075
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="a2" type="ColorRect" parent="Background"]
-margin_left = 64.0
-margin_top = 104.0
-margin_right = 104.0
-margin_bottom = 144.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/a2"]
-margin_left = 5.02075
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="a3" type="ColorRect" parent="Background"]
-margin_left = 64.0
-margin_top = 144.0
-margin_right = 104.0
-margin_bottom = 184.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/a3"]
-margin_left = 5.02075
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="b3" type="ColorRect" parent="Background"]
-margin_left = 104.0
-margin_top = 144.0
-margin_right = 144.0
-margin_bottom = 184.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/b3"]
-margin_left = 5.02075
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="c3" type="ColorRect" parent="Background"]
-margin_left = 144.0
-margin_top = 144.0
-margin_right = 184.0
-margin_bottom = 184.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/c3"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="d3" type="ColorRect" parent="Background"]
-margin_left = 184.0
-margin_top = 144.0
-margin_right = 224.0
-margin_bottom = 184.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/d3"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="e3" type="ColorRect" parent="Background"]
-margin_left = 224.0
-margin_top = 144.0
-margin_right = 264.0
-margin_bottom = 184.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/e3"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="f3" type="ColorRect" parent="Background"]
-margin_left = 264.0
-margin_top = 144.0
-margin_right = 304.0
-margin_bottom = 184.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/f3"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="g3" type="ColorRect" parent="Background"]
-margin_left = 304.0
-margin_top = 144.0
-margin_right = 344.0
-margin_bottom = 184.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/g3"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="h3" type="ColorRect" parent="Background"]
-margin_left = 344.0
-margin_top = 144.0
-margin_right = 384.0
-margin_bottom = 184.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/h3"]
-margin_left = 5.02075
-margin_top = 3.52558
-margin_right = 45.0208
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="h4" type="ColorRect" parent="Background"]
-margin_left = 344.0
-margin_top = 184.0
-margin_right = 384.0
-margin_bottom = 224.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/h4"]
-margin_left = 5.02075
-margin_top = 3.52558
-margin_right = 45.0208
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="g4" type="ColorRect" parent="Background"]
-margin_left = 304.0
-margin_top = 184.0
-margin_right = 344.0
-margin_bottom = 224.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/g4"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="f4" type="ColorRect" parent="Background"]
-margin_left = 264.0
-margin_top = 184.0
-margin_right = 304.0
-margin_bottom = 224.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/f4"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="e4" type="ColorRect" parent="Background"]
-margin_left = 224.0
-margin_top = 184.0
-margin_right = 264.0
-margin_bottom = 224.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/e4"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="d4" type="ColorRect" parent="Background"]
-margin_left = 184.0
-margin_top = 184.0
-margin_right = 224.0
-margin_bottom = 224.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/d4"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="c4" type="ColorRect" parent="Background"]
-margin_left = 144.0
-margin_top = 184.0
-margin_right = 184.0
-margin_bottom = 224.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/c4"]
-margin_left = 5.02074
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="b4" type="ColorRect" parent="Background"]
-margin_left = 104.0
-margin_top = 184.0
-margin_right = 144.0
-margin_bottom = 224.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/b4"]
-margin_left = 5.02075
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="a4" type="ColorRect" parent="Background"]
-margin_left = 64.0
-margin_top = 184.0
-margin_right = 104.0
-margin_bottom = 224.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/a4"]
-margin_left = 5.02075
-margin_top = 3.52558
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="a5" type="ColorRect" parent="Background"]
-margin_left = 64.0
-margin_top = 224.0
-margin_right = 104.0
-margin_bottom = 264.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/a5"]
-margin_left = 5.02075
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="b5" type="ColorRect" parent="Background"]
-margin_left = 104.0
-margin_top = 224.0
-margin_right = 144.0
-margin_bottom = 264.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/b5"]
-margin_left = 5.02075
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="c5" type="ColorRect" parent="Background"]
-margin_left = 144.0
-margin_top = 224.0
-margin_right = 184.0
-margin_bottom = 264.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/c5"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="d5" type="ColorRect" parent="Background"]
-margin_left = 184.0
-margin_top = 224.0
-margin_right = 224.0
-margin_bottom = 264.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/d5"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="e5" type="ColorRect" parent="Background"]
-margin_left = 224.0
-margin_top = 224.0
-margin_right = 264.0
-margin_bottom = 264.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/e5"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="f5" type="ColorRect" parent="Background"]
-margin_left = 264.0
-margin_top = 224.0
-margin_right = 304.0
-margin_bottom = 264.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/f5"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="g5" type="ColorRect" parent="Background"]
-margin_left = 304.0
-margin_top = 224.0
-margin_right = 344.0
-margin_bottom = 264.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/g5"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="h5" type="ColorRect" parent="Background"]
-margin_left = 344.0
-margin_top = 224.0
-margin_right = 384.0
-margin_bottom = 264.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/h5"]
-margin_left = 5.02075
-margin_top = 3.52557
-margin_right = 45.0208
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="h6" type="ColorRect" parent="Background"]
-margin_left = 344.0
-margin_top = 264.0
-margin_right = 384.0
-margin_bottom = 304.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/h6"]
-margin_left = 5.02075
-margin_top = 3.52557
-margin_right = 45.0208
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="g6" type="ColorRect" parent="Background"]
-margin_left = 304.0
-margin_top = 264.0
-margin_right = 344.0
-margin_bottom = 304.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/g6"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="f6" type="ColorRect" parent="Background"]
-margin_left = 264.0
-margin_top = 264.0
-margin_right = 304.0
-margin_bottom = 304.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/f6"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="e6" type="ColorRect" parent="Background"]
-margin_left = 224.0
-margin_top = 264.0
-margin_right = 264.0
-margin_bottom = 304.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/e6"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="d6" type="ColorRect" parent="Background"]
-margin_left = 184.0
-margin_top = 264.0
-margin_right = 224.0
-margin_bottom = 304.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/d6"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="c6" type="ColorRect" parent="Background"]
-margin_left = 144.0
-margin_top = 264.0
-margin_right = 184.0
-margin_bottom = 304.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/c6"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="b6" type="ColorRect" parent="Background"]
-margin_left = 104.0
-margin_top = 264.0
-margin_right = 144.0
-margin_bottom = 304.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/b6"]
-margin_left = 5.02075
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="a6" type="ColorRect" parent="Background"]
-margin_left = 64.0
-margin_top = 264.0
-margin_right = 104.0
-margin_bottom = 304.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/a6"]
-margin_left = 5.02075
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="a7" type="ColorRect" parent="Background"]
-margin_left = 64.0
-margin_top = 304.0
-margin_right = 104.0
-margin_bottom = 344.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/a7"]
-margin_left = 5.02075
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="b7" type="ColorRect" parent="Background"]
-margin_left = 104.0
-margin_top = 304.0
-margin_right = 144.0
-margin_bottom = 344.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/b7"]
-margin_left = 5.02075
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="c7" type="ColorRect" parent="Background"]
-margin_left = 144.0
-margin_top = 304.0
-margin_right = 184.0
-margin_bottom = 344.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/c7"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="d7" type="ColorRect" parent="Background"]
-margin_left = 184.0
-margin_top = 304.0
-margin_right = 224.0
-margin_bottom = 344.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/d7"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="e7" type="ColorRect" parent="Background"]
-margin_left = 224.0
-margin_top = 304.0
-margin_right = 264.0
-margin_bottom = 344.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/e7"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="f7" type="ColorRect" parent="Background"]
-margin_left = 264.0
-margin_top = 304.0
-margin_right = 304.0
-margin_bottom = 344.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.792157, 0.737255, 0.364706, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/f7"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="g7" type="ColorRect" parent="Background"]
-margin_left = 304.0
-margin_top = 304.0
-margin_right = 344.0
-margin_bottom = 344.0
-rect_pivot_offset = Vector2( 80, 48 )
-color = Color( 0.368627, 0.262745, 0.207843, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Background/g7"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="h7" type="ColorRect" parent="Background"]
 margin_left = 344.0
+margin_top = 104.0
+margin_right = 384.0
+margin_bottom = 144.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/h7"]
+margin_top = 3.76051
+margin_right = 40.0001
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="g7" type="ColorRect" parent="Background"]
+margin_left = 304.0
+margin_top = 104.0
+margin_right = 344.0
+margin_bottom = 144.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/g7"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="f7" type="ColorRect" parent="Background"]
+margin_left = 264.0
+margin_top = 104.0
+margin_right = 304.0
+margin_bottom = 144.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/f7"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="e7" type="ColorRect" parent="Background"]
+margin_left = 224.0
+margin_top = 104.0
+margin_right = 264.0
+margin_bottom = 144.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/e7"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="d7" type="ColorRect" parent="Background"]
+margin_left = 184.0
+margin_top = 104.0
+margin_right = 224.0
+margin_bottom = 144.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/d7"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="c7" type="ColorRect" parent="Background"]
+margin_left = 144.0
+margin_top = 104.0
+margin_right = 184.0
+margin_bottom = 144.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/c7"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b7" type="ColorRect" parent="Background"]
+margin_left = 104.0
+margin_top = 104.0
+margin_right = 144.0
+margin_bottom = 144.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/b7"]
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="a7" type="ColorRect" parent="Background"]
+margin_left = 64.0
+margin_top = 104.0
+margin_right = 104.0
+margin_bottom = 144.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/a7"]
+margin_left = -1.90735e-06
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="a6" type="ColorRect" parent="Background"]
+margin_left = 64.0
+margin_top = 144.0
+margin_right = 104.0
+margin_bottom = 184.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/a6"]
+margin_left = -1.90735e-06
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b6" type="ColorRect" parent="Background"]
+margin_left = 104.0
+margin_top = 144.0
+margin_right = 144.0
+margin_bottom = 184.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/b6"]
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="c6" type="ColorRect" parent="Background"]
+margin_left = 144.0
+margin_top = 144.0
+margin_right = 184.0
+margin_bottom = 184.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/c6"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="d6" type="ColorRect" parent="Background"]
+margin_left = 184.0
+margin_top = 144.0
+margin_right = 224.0
+margin_bottom = 184.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/d6"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="e6" type="ColorRect" parent="Background"]
+margin_left = 224.0
+margin_top = 144.0
+margin_right = 264.0
+margin_bottom = 184.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/e6"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="f6" type="ColorRect" parent="Background"]
+margin_left = 264.0
+margin_top = 144.0
+margin_right = 304.0
+margin_bottom = 184.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/f6"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="g6" type="ColorRect" parent="Background"]
+margin_left = 304.0
+margin_top = 144.0
+margin_right = 344.0
+margin_bottom = 184.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/g6"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="h6" type="ColorRect" parent="Background"]
+margin_left = 344.0
+margin_top = 144.0
+margin_right = 384.0
+margin_bottom = 184.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/h6"]
+margin_top = 3.76051
+margin_right = 40.0001
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="h5" type="ColorRect" parent="Background"]
+margin_left = 344.0
+margin_top = 184.0
+margin_right = 384.0
+margin_bottom = 224.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/h5"]
+margin_top = 3.76051
+margin_right = 40.0001
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="g5" type="ColorRect" parent="Background"]
+margin_left = 304.0
+margin_top = 184.0
+margin_right = 344.0
+margin_bottom = 224.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/g5"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="f5" type="ColorRect" parent="Background"]
+margin_left = 264.0
+margin_top = 184.0
+margin_right = 304.0
+margin_bottom = 224.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/f5"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="e5" type="ColorRect" parent="Background"]
+margin_left = 224.0
+margin_top = 184.0
+margin_right = 264.0
+margin_bottom = 224.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/e5"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="d5" type="ColorRect" parent="Background"]
+margin_left = 184.0
+margin_top = 184.0
+margin_right = 224.0
+margin_bottom = 224.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/d5"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="c5" type="ColorRect" parent="Background"]
+margin_left = 144.0
+margin_top = 184.0
+margin_right = 184.0
+margin_bottom = 224.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/c5"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b5" type="ColorRect" parent="Background"]
+margin_left = 104.0
+margin_top = 184.0
+margin_right = 144.0
+margin_bottom = 224.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/b5"]
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="a5" type="ColorRect" parent="Background"]
+margin_left = 64.0
+margin_top = 184.0
+margin_right = 104.0
+margin_bottom = 224.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/a5"]
+margin_left = -1.90735e-06
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="a4" type="ColorRect" parent="Background"]
+margin_left = 64.0
+margin_top = 224.0
+margin_right = 104.0
+margin_bottom = 264.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/a4"]
+margin_left = -1.90735e-06
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b4" type="ColorRect" parent="Background"]
+margin_left = 104.0
+margin_top = 224.0
+margin_right = 144.0
+margin_bottom = 264.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/b4"]
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="c4" type="ColorRect" parent="Background"]
+margin_left = 144.0
+margin_top = 224.0
+margin_right = 184.0
+margin_bottom = 264.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/c4"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="d4" type="ColorRect" parent="Background"]
+margin_left = 184.0
+margin_top = 224.0
+margin_right = 224.0
+margin_bottom = 264.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/d4"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="e4" type="ColorRect" parent="Background"]
+margin_left = 224.0
+margin_top = 224.0
+margin_right = 264.0
+margin_bottom = 264.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/e4"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="f4" type="ColorRect" parent="Background"]
+margin_left = 264.0
+margin_top = 224.0
+margin_right = 304.0
+margin_bottom = 264.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/f4"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="g4" type="ColorRect" parent="Background"]
+margin_left = 304.0
+margin_top = 224.0
+margin_right = 344.0
+margin_bottom = 264.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/g4"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="h4" type="ColorRect" parent="Background"]
+margin_left = 344.0
+margin_top = 224.0
+margin_right = 384.0
+margin_bottom = 264.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/h4"]
+margin_top = 3.76051
+margin_right = 40.0001
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="h3" type="ColorRect" parent="Background"]
+margin_left = 344.0
+margin_top = 264.0
+margin_right = 384.0
+margin_bottom = 304.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/h3"]
+margin_top = 3.76051
+margin_right = 40.0001
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="g3" type="ColorRect" parent="Background"]
+margin_left = 304.0
+margin_top = 264.0
+margin_right = 344.0
+margin_bottom = 304.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/g3"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="f3" type="ColorRect" parent="Background"]
+margin_left = 264.0
+margin_top = 264.0
+margin_right = 304.0
+margin_bottom = 304.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/f3"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="e3" type="ColorRect" parent="Background"]
+margin_left = 224.0
+margin_top = 264.0
+margin_right = 264.0
+margin_bottom = 304.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/e3"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="d3" type="ColorRect" parent="Background"]
+margin_left = 184.0
+margin_top = 264.0
+margin_right = 224.0
+margin_bottom = 304.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/d3"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="c3" type="ColorRect" parent="Background"]
+margin_left = 144.0
+margin_top = 264.0
+margin_right = 184.0
+margin_bottom = 304.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/c3"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b3" type="ColorRect" parent="Background"]
+margin_left = 104.0
+margin_top = 264.0
+margin_right = 144.0
+margin_bottom = 304.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/b3"]
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="a3" type="ColorRect" parent="Background"]
+margin_left = 64.0
+margin_top = 264.0
+margin_right = 104.0
+margin_bottom = 304.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/a3"]
+margin_left = -1.90735e-06
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="a2" type="ColorRect" parent="Background"]
+margin_left = 64.0
+margin_top = 304.0
+margin_right = 104.0
+margin_bottom = 344.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/a2"]
+margin_left = -1.90735e-06
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b2" type="ColorRect" parent="Background"]
+margin_left = 104.0
+margin_top = 304.0
+margin_right = 144.0
+margin_bottom = 344.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/b2"]
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="c2" type="ColorRect" parent="Background"]
+margin_left = 144.0
+margin_top = 304.0
+margin_right = 184.0
+margin_bottom = 344.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/c2"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="d2" type="ColorRect" parent="Background"]
+margin_left = 184.0
+margin_top = 304.0
+margin_right = 224.0
+margin_bottom = 344.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/d2"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="e2" type="ColorRect" parent="Background"]
+margin_left = 224.0
+margin_top = 304.0
+margin_right = 264.0
+margin_bottom = 344.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/e2"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="f2" type="ColorRect" parent="Background"]
+margin_left = 264.0
+margin_top = 304.0
+margin_right = 304.0
+margin_bottom = 344.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.792157, 0.737255, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/f2"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="g2" type="ColorRect" parent="Background"]
+margin_left = 304.0
+margin_top = 304.0
+margin_right = 344.0
+margin_bottom = 344.0
+rect_pivot_offset = Vector2( 80, 48 )
+color = Color( 0.368627, 0.262745, 0.207843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/g2"]
+margin_left = -1.52588e-05
+margin_top = 3.76051
+margin_right = 39.9999
+margin_bottom = 43.7605
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="h2" type="ColorRect" parent="Background"]
+margin_left = 344.0
 margin_top = 304.0
 margin_right = 384.0
 margin_bottom = 344.0
@@ -1429,15 +1528,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Background/h7"]
-margin_left = 5.02075
-margin_top = 3.52557
-margin_right = 45.0208
-margin_bottom = 43.5256
+[node name="Label" type="Label" parent="Background/h2"]
+margin_top = 3.76051
+margin_right = 40.0001
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1454,19 +1554,20 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="Background/h1"]
-margin_left = 5.02075
-margin_top = 3.52557
-margin_right = 45.0208
-margin_bottom = 43.5256
+margin_top = 3.7605
+margin_right = 40.0001
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="g8" type="ColorRect" parent="Background"]
+[node name="g1" type="ColorRect" parent="Background"]
 margin_left = 304.0
 margin_top = 344.0
 margin_right = 344.0
@@ -1477,20 +1578,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Background/g8"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
+[node name="Label" type="Label" parent="Background/g1"]
+margin_left = -1.52588e-05
+margin_top = 3.7605
+margin_right = 39.9999
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="f8" type="ColorRect" parent="Background"]
+[node name="f1" type="ColorRect" parent="Background"]
 margin_left = 264.0
 margin_top = 344.0
 margin_right = 304.0
@@ -1501,20 +1604,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Background/f8"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
+[node name="Label" type="Label" parent="Background/f1"]
+margin_left = -1.52588e-05
+margin_top = 3.7605
+margin_right = 39.9999
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="e8" type="ColorRect" parent="Background"]
+[node name="e1" type="ColorRect" parent="Background"]
 margin_left = 224.0
 margin_top = 344.0
 margin_right = 264.0
@@ -1525,20 +1630,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Background/e8"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
+[node name="Label" type="Label" parent="Background/e1"]
+margin_left = -1.52588e-05
+margin_top = 3.7605
+margin_right = 39.9999
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="d8" type="ColorRect" parent="Background"]
+[node name="d1" type="ColorRect" parent="Background"]
 margin_left = 184.0
 margin_top = 344.0
 margin_right = 224.0
@@ -1549,20 +1656,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Background/d8"]
-margin_left = 5.02074
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
+[node name="Label" type="Label" parent="Background/d1"]
+margin_left = -1.52588e-05
+margin_top = 3.7605
+margin_right = 39.9999
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="c8" type="ColorRect" parent="Background"]
+[node name="c1" type="ColorRect" parent="Background"]
 margin_left = 144.0
 margin_top = 344.0
 margin_right = 184.0
@@ -1573,20 +1682,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Background/c8"]
-margin_left = 4.50741
-margin_top = 3.52557
-margin_right = 44.5074
-margin_bottom = 43.5256
+[node name="Label" type="Label" parent="Background/c1"]
+margin_left = -0.513344
+margin_top = 3.7605
+margin_right = 39.4866
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="b8" type="ColorRect" parent="Background"]
+[node name="b1" type="ColorRect" parent="Background"]
 margin_left = 104.0
 margin_top = 344.0
 margin_right = 144.0
@@ -1597,20 +1708,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Background/b8"]
-margin_left = 5.02075
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
+[node name="Label" type="Label" parent="Background/b1"]
+margin_top = 3.7605
+margin_right = 39.9999
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="a8" type="ColorRect" parent="Background"]
+[node name="a1" type="ColorRect" parent="Background"]
 margin_left = 64.0
 margin_top = 344.0
 margin_right = 104.0
@@ -1621,15 +1733,17 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Background/a8"]
-margin_left = 5.02075
-margin_top = 3.52557
-margin_right = 45.0207
-margin_bottom = 43.5256
+[node name="Label" type="Label" parent="Background/a1"]
+margin_left = -1.90735e-06
+margin_top = 3.7605
+margin_right = 39.9999
+margin_bottom = 43.7605
 custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
-text = "Q"
+custom_colors/font_color_shadow = Color( 0.631373, 0.631373, 0.631373, 1 )
+text = "q"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1687,6 +1801,24 @@ margin_left = 568.0
 margin_top = 264.0
 margin_right = 608.0
 margin_bottom = 278.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ValidateHMLabel" type="Label" parent="."]
+margin_left = 568.0
+margin_top = 288.0
+margin_right = 608.0
+margin_bottom = 302.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ValidateFMLabel" type="Label" parent="."]
+margin_left = 568.0
+margin_top = 312.0
+margin_right = 608.0
+margin_bottom = 318.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

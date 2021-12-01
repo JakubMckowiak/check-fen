@@ -115,6 +115,17 @@ func val(fen):
 	else:
 		$ValidateEnPassantLabel.text = "En Passant is marked incorrectly"
 	
+	# "Halfmove"
+	if isHalfMove(fenArr[11]):
+		$ValidateHMLabel.text = "Halfmove is marked correctly"
+	else:
+		$ValidateHMLabel.text = "Halfmove is marked incorrectly"
+	
+	# "Fullmove"
+	if isFullMove(fenArr[11],fenArr[12]):
+		$ValidateFMLabel.text = "Fullmove is marked correctly"
+	else:
+		$ValidateFMLabel.text = "Fullmove is marked incorrectly"
 	
 func messCleaner():
 	board = cleanBoard
@@ -240,8 +251,30 @@ func isEnPassant(n, m):
 						return true
 	return false
 	
-	
-	
+func isHalfMove(n):
+	if n == "-":
+		return true
+	elif len(n)>3:
+		return false
+	for i in n:
+		if "1234567890".count(i)==0:
+			return false
+	if int(n)>=100:
+		return false
+	return true
+
+func isFullMove(n, half):
+	if n == "-":
+		return true
+	elif len(n)>2:
+		return false
+	for i in n:
+		if "1234567890".count(i)==0:
+			return false
+	if (int(n)/2)>int(half):
+		return false
+	return true
+
 func paintBoard():
 	$Background/a8/Label.text = board[0][0][1]
 	$Background/b8/Label.text = board[0][1][1]
