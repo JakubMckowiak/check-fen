@@ -126,6 +126,8 @@ func val(fen):
 		$ValidateFMLabel.text = "Fullmove is marked correctly"
 	else:
 		$ValidateFMLabel.text = "Fullmove is marked incorrectly"
+		
+	$ValidateKingLabel.text = correctKing()
 	
 func messCleaner():
 	board = cleanBoard
@@ -252,7 +254,7 @@ func isEnPassant(n, m):
 	return false
 	
 func isHalfMove(n):
-	if n == "-":
+	if n == "0":
 		return true
 	elif len(n)>3:
 		return false
@@ -264,7 +266,7 @@ func isHalfMove(n):
 	return true
 
 func isFullMove(n, half):
-	if n == "-":
+	if n == "0":
 		return true
 	elif len(n)>2:
 		return false
@@ -275,6 +277,50 @@ func isFullMove(n, half):
 		return false
 	return true
 
+func correctKing():
+	var King = 0
+	var king = 0
+	var ki = ""
+	var kj = ""
+	# checking for amount of kings and not next
+	# to each other
+	for i in range(len(board)):
+		if (king>1 || King>1):
+			return "There are too many kings!"
+		for j in range(len(board[i])):
+			if board[i][j][1] == "k":
+				# if we find a king, we take his coordinates
+				# and check for any nearby
+				if kingNear(i,j):
+					return "Kings are too close"
+				king += 1
+			elif board[i][j][1] == "K":
+				# if we find a king, we take his coordinates
+				# and check for any nearby
+				if kingNear(i,j):
+					return "Kings are too close"
+				King += 1
+	if (king==0 || King==0):
+		return "King is missing"
+	return "Kings are correctly placed"
+	
+func kingNear(r,c):
+	# we check only the one on right in the same row
+	# and -1 , 0 , 1 positions in next row
+	if c<7:
+		if board[r][c+1][1] == "k" or board[r][c+1][1] == "K":
+			return true
+	if c>0 and r<7:
+		if board[r+1][c-1][1] == "k" or board[r+1][c-1][1] == "K":
+			return true
+	if r<7:
+		if board[r+1][c][1] == "k" or board[r+1][c][1] == "K":
+			return true
+	if c<7 and r<7:
+		if board[r+1][c+1][1] == "k" or board[r+1][c+1][1] == "K":
+			return true
+	return false
+	
 func paintBoard():
 	$Background/a8/Label.text = board[0][0][1]
 	$Background/b8/Label.text = board[0][1][1]

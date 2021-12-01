@@ -1818,7 +1818,16 @@ __meta__ = {
 margin_left = 568.0
 margin_top = 312.0
 margin_right = 608.0
-margin_bottom = 318.0
+margin_bottom = 326.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ValidateKingLabel" type="Label" parent="."]
+margin_left = 568.0
+margin_top = 336.0
+margin_right = 608.0
+margin_bottom = 350.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
